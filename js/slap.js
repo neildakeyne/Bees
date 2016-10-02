@@ -42,7 +42,7 @@ function newBees(){
 function outPutHtml(bees){
 	var html = "";
 	for (var i = 0; i < bees.length; i++) {		
-		html += "<tr><td>"+i+"</td><td>"+bees[i].type+"</td><td>"+bees[i].health+"</td><td>"+bees[i].status+"</td></tr>"
+		html += "<tr><td>"+bees[i].type+"</td><td>"+bees[i].health+"</td><td>"+bees[i].status+"</td></tr>"
 	}
 	$("#js-bees tbody").empty().append(html);
 }
