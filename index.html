@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bee Slap</title>
+</head>
+
+<style>
+    .hide{
+        display: none;
+    }
+</style>
+
+<body>   
+
+    <div>
+        <h1>Bee Slap</h1>
+
+        <table id="js-bees">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>TYPE</th>
+                    <th>HEALTH</th>
+                    <th>STATUS</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+
+        <button id="js-btn-hit">Slap</button>
+        <button id="js-btn-reset">Reset</button>
+
+        <p id="js-dead-bee-msg" class="hide">That bee is already dead, slap another</p>
+
+        <div class="hide" id="js-status">
+            <h2>Status</h2>
+            <p>A <span id="type"></span> was slapped and lost <span id="health-lost"></span> points. It has <span id="health-remaining"></span> health points remaining.</p>
+        </div>
+
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/slap.js"></script>
+
+</body>
+
+</html>
